@@ -1,6 +1,6 @@
 # Getting Started with Art Generator!
 
-## `npm install`
+### `npm install`
 
 ### `npm start`
 
