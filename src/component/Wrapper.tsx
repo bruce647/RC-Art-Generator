@@ -2,7 +2,6 @@ import { P5Instance } from "react-p5-wrapper";
 
 export default function sketch(p5: P5Instance) {
     let MAX_HEIGHT = window.innerHeight / 2;
-    let MAX_WIDTH = 2*window.innerWidth / 3;
     let DENSITY = 20;
     let GAP = MAX_HEIGHT / DENSITY;
     let STROKE_COLOR = "Blue";
@@ -10,7 +9,7 @@ export default function sketch(p5: P5Instance) {
     
 
   p5.setup = () => {
-    p5.createCanvas(MAX_WIDTH,MAX_HEIGHT);
+    p5.createCanvas(MAX_HEIGHT,MAX_HEIGHT);
     p5.noLoop();
     }
 
