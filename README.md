@@ -8,7 +8,7 @@ Language: Typescript
 
 Framework: React
 
-Libraries: P5.js, react-p5-wrapper
+Libraries: P5.js, react-p5-wrapper, styled-components
 
 UI: Ant-design
 
