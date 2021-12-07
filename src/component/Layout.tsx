@@ -3,21 +3,21 @@ import { PageHeader, Slider, TreeSelect, Row, Col, Layout, Breadcrumb, Divider }
 import ColorSelecter from './ColorPicker'
 import { Font } from './style'
 import * as view from './Wrapper'
-import { ReactP5Wrapper } from 'react-p5-wrapper'
+import { ReactP5Wrapper, Sketch } from 'react-p5-wrapper'
 
 interface MyProps {
 }
 
 interface MyState {
-    density: any,
+    density: number | null,
     setValue: any,
-    wrapperFunction: any,
-    colorSet: any
+    wrapperFunction: Sketch,
+    colorSet: Array<number> | null
 }
 
 class LayoutComp extends Component<MyProps, MyState>{
 
-    constructor(props: any) {
+    constructor(props: MyProps) {
         super(props)
         this.state = {
             density: null, //density of the element
