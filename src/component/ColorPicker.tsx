@@ -2,18 +2,19 @@ import React, { Component } from 'react';
 import ColorPicker from "react-pick-color";
 import { Button } from 'antd';
 import { ColorSquare, SquareContainer } from './style'
+import { SizeType } from 'antd/lib/config-provider/SizeContext';
 
 interface MyProps {
-    getColorSet:any
+    getColorSet:Function
 }
 
 interface MyState {
     color: string,
     setColor: any,
-    size: any,
+    size: SizeType,
     counter: number,
     colorSet: any,
-    hexColorSet: any,
+    hexColorSet: Array<string>,
 }
 
 export default class ColorSelecter extends Component<MyProps, MyState>{
