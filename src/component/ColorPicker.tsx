@@ -18,7 +18,7 @@ interface MyState {
 }
 
 export default class ColorSelecter extends Component<MyProps, MyState>{
-    constructor(props: any) {
+    constructor(props: MyProps) {
         super(props)
         this.state = {
             color: "#fff", //initial color
